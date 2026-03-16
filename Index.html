@@ -1,0 +1,33 @@
+def chatbot():
+    print("🤖 Student Assistant Chatbot")
+    print("Type 'bye' to exit the chat.\n")
+
+    name = input("Enter your name: ")
+    print("Hello", name, "! How can I help you today?\n")
+
+    while True:
+        user = input("You: ").lower()
+
+        if user == "hello":
+            print("Bot: Hello! Nice to meet you 😊")
+
+        elif user == "how are you":
+            print("Bot: I'm doing great! Ready to help you study 📚")
+
+        elif user == "study tips":
+            print("Bot: Try studying for 25 minutes and take a 5 minute break (Pomodoro technique).")
+
+        elif user == "python":
+            print("Bot: Python is a popular programming language used in AI, data science and web development.")
+
+        elif user == "motivation":
+            print("Bot: Keep learning! Small progress every day leads to big success 🚀")
+
+        elif user == "bye":
+            print("Bot: Goodbye! Have a great day 👋")
+            break
+
+        else:
+            print("Bot: Sorry, I didn't understand that.")
+
+chatbot()
